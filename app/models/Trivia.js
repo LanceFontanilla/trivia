@@ -12,19 +12,16 @@ export class Trivia {
 
     get TriviasCard() {
         return `
-<section class="p-3">
-
-      <div class="col-4 questionCard ">
-        <h5 class="text-center fw-bold text-primary">${this.question}</h5>
-
-        <div class="row p-3 d-flex justify-content-evenly">
-          <p class="col-6 answerCard text-center fw-bold p-1">${this.correctAnswer}</p>
-          <p class="col-6 answerCard text-center fw-bold p-1">${this.incorrectAnswer}</p>
+        
+        <div class="row p-3">
+          <div class="col-4 questionCard ">
+            <h5 class="text-center fw-bold text-primary">${this.question}</h5>
+            <div class="row p-3 d-flex justify-content-evenly">
+              <p class="col-5 answerCard text-center fw-bold p-1">${this.correctAnswer}</p>
+              <p class="col-5 answerCard text-center fw-bold p-1">${this.incorrectAnswer}</p>
+            </div>
+          </div>
         </div>
-
-      </div>
-     
-    </section>
 
         `
     }
